@@ -9,7 +9,7 @@ Original file is located at
 
 import os
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 from openai import OpenAI
 
