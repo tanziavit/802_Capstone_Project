@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Real Estate AI</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="js/dashboard.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">RealEstate AI</div>
+    <ul class="nav-links">
+        <li><a href="dashboard.html" class="active">Home</a></li>
+        <li><a href="generate.html">Generate</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="login.html" id="logoutBtn">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Welcome to Real Estate AI</h1>
+    <p>Generate high-quality marketing content for your properties in seconds.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Generate Content</h3>
+            <p>Create property listings, social media posts, emails, and more.</p>
+            <button onclick="goToGenerate()">Start Generating</button>
+        </div>
+
+        <div class="card">
+            <h3>View History</h3>
+            <p>Access and manage your previously generated content.</p>
+            <button onclick="goToHistory()">View History</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
