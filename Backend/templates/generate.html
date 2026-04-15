@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Content - Real Estate AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/generate.css') }}">
+    <script src="{{ url_for('static', filename='js/generate.js') }}"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">RealEstate AI</div>
+    <ul class="nav-links">
+        <li><a href="/dashboard">Home</a></li>
+        <li><a href="/generate" class="active">Generate</a></li>
+        <li><a href="/history">History</a></li>
+        <li><a href="/login" id="logoutBtn">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <h1>Generate Property Content</h1>
+
+    <!-- Form Section -->
+    <div class="form-box">
+        <form id="generateForm">
+
+            <input type="text" id="location" placeholder="Location" required>
+            <input type="text" id="size" placeholder="Size (e.g. 1200 sqft)" required>
+            <input type="text" id="price" placeholder="Price" required>
+            
+            <textarea id="features" placeholder="Features (e.g. 3BHK, parking, balcony)" required></textarea>
+
+            <select id="tone">
+                <option value="formal">Formal</option>
+                <option value="casual">Casual</option>
+                <option value="promotional">Promotional</option>
+            </select>
+
+            <button type="submit">Generate Content</button>
+        </form>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-box" id="outputSection" style="display:none;">
+
+        <h2>Generated Content</h2>
+
+        <div class="output">
+            <h3>Listing Description</h3>
+            <p id="listingOutput"></p>
+        </div>
+
+        <div class="output">
+            <h3>Social Media Post</h3>
+            <p id="socialOutput"></p>
+        </div>
+
+        <div class="output">
+            <h3>Email Content</h3>
+            <p id="emailOutput"></p>
+        </div>
+
+        <div class="output">
+            <h3>Video Script</h3>
+            <p id="videoOutput"></p>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

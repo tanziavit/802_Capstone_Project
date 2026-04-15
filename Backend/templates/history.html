@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History - Real Estate AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/history.css') }}">
+    <script src="{{ url_for('static', filename='js/history.js') }}"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">RealEstate AI</div>
+    <ul class="nav-links">
+        <li><a href="/dashboard">Home</a></li>
+        <li><a href="/generate">Generate</a></li>
+        <li><a href="/history" class="active">History</a></li>
+        <li><a href="/login" id="logoutBtn">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Your Generated History</h1>
+
+    <div id="historyList">
+        <!-- JS will insert cards here -->
+    </div>
+</div>
+</body>
+</html>
